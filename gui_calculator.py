@@ -42,7 +42,7 @@ class Calculator:
             self.entered_number = int(new_text)
             return True
         except ValueError:
-            return True
+            return False #here the return value should be false not true
 
     def update(self, method):
         if method == "add":
